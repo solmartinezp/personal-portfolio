@@ -17,7 +17,7 @@
     align-items: center;
     z-index: 300;
     top: 0;
-    margin-top: 15%;
+    margin-top: 7%;
 }
 
 .stack-hero h1 {
@@ -36,13 +36,13 @@
 }
 
 .stack-list {
+    width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    padding-bottom: 0;
   }
 .grid-item {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    font-family: var(--secondary-font);
+    padding: 20px 60px 20px 60px;
+    cursor: pointer;
   }
