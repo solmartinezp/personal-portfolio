@@ -31,33 +31,3 @@
     font-size: 40px;
     font-weight: 200;
 }
-
-.layout-3d {
-    z-index: 300;
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.layout-3d p, span {
-    color: white;
-    margin: 0;
-    padding: 0;
-    font-family: var(--primary-font);
-}
-
-.layout-3d span {
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-.layout-3d p {
-    text-align: center;
-    width: 80%;
-    color: white;
-    font-size: 14px;
-}

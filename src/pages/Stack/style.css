@@ -1,4 +1,4 @@
-.about-div {
+.stack-div {
     background-color: black;
     width: 100vw;
     height: 100vh;
@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.about-hero {
+.stack-hero {
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -20,13 +20,13 @@
     margin-top: 15%;
 }
 
-.about-hero h1 {
+.stack-hero h1 {
     font-size: 60px;
     margin: 0;
     font-family: var(--secondary-font);
 }
 
-.about-hero h4 {
+.stack-hero h4 {
     text-align: center;
     font-family: var(--primary-font);
     margin: 20px;
@@ -34,3 +34,15 @@
     font-size: 30px;
     font-weight: 200;
 }
+
+.stack-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--secondary-font);
+  }

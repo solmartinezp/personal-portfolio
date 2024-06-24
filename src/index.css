@@ -1,6 +1,8 @@
 :root {
   --primary-font: sans-serif;
   --secondary-font: monospace;
+  --react-color-1: #b8e7f3;
+  --react-color-2: #061b25;
 }
 
 body {
