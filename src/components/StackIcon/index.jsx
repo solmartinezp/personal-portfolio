@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const StackIcon = ({ icon, color1, color2 }) => {
+const StackIcon = ({ icon }) => {
   return (
     <div className="coin"
     >

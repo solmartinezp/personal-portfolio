@@ -29,7 +29,7 @@
   }
   
   .coin:before, .coin:after {
-    background: linear-gradient(var(--react-color-1), var(--react-color-2));
+    background: linear-gradient(rgba(247, 246, 246, 0.909), rgba(104, 99, 94, 0.966));
     backface-visibility: hidden;
     transform: rotateY(90deg);
   }

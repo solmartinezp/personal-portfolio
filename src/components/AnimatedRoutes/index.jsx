@@ -16,7 +16,7 @@ export default function AnimatedRoutes() {
                 <Route path="/" element={<Layout />} />
                 <Route path="about" element={<About />} />
                 <Route path="stack" element={<Stack />} />
-                <Route path="portfolio" element={<Projects />} />
+                <Route path="projects" element={<Projects />} />
                 <Route path="contact" element={<Contact />} />
             </Routes>
       </AnimatePresence>

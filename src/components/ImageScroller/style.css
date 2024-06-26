@@ -1,0 +1,24 @@
+.image-scroller-div {
+  margin-top: 10%;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.image-scroller-container {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+} 
+
+.box {
+  min-width: 240px;
+  margin-right: 10px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

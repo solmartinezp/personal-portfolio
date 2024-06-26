@@ -4,15 +4,15 @@ import Spline from '@splinetool/react-spline';
 import StackIcon from '../../components/StackIcon';
 import './style.css';
 import ReactJS from '../../assets/reactJS.png';
-import ReactNative from '../../assets/reactNATIVE.svg';
-import Typescript from '../../assets/typescript.png';
+import ReactNative from '../../assets/reactNATIVE.png';
+import Typescript from '../../assets/typescript.jpeg';
 import CSSIcon from '../../assets/css.png';
 import Expo from '../../assets/expo.svg';
 import GCP from '../../assets/gcp.png';
 import Git from '../../assets/git.png';
 import HTMLIcon from '../../assets/html.png';
-import Javascript from '../../assets/js.png';
-// import MongoDB from '../../assets/mondo.webp';
+import Javascript from '../../assets/js.jpeg';
+import MongoDB from '../../assets/mongodb.png';
 import Node from '../../assets/node.png';
 import MySQL from '../../assets/sql.png';
 
@@ -41,40 +41,40 @@ const Stack = () => {
 
         <div className="stack-list">
           <div class="grid-item">
-             <StackIcon icon={ReactJS} color1="#61dbfb" color2="#347384" />
+             <StackIcon icon={ReactJS} />
           </div>
           <div class="grid-item">
-              <StackIcon icon={ReactNative} color1="#61dbfb" color2="#347384" />
+              <StackIcon icon={ReactNative} />
           </div>
           <div class="grid-item">
-              <StackIcon icon={Typescript} color1="#61dbfb" color2="#347384" />
+              <StackIcon icon={Typescript} />
           </div>
           <div class="grid-item">
-            <StackIcon icon={HTMLIcon} color1="#61dbfb" color2="#347384" />
+            <StackIcon icon={Expo} />
+          </div>
+          <div class="grid-item">
+            <StackIcon icon={HTMLIcon} />
           </div>  
           <div class="grid-item">
-            <StackIcon icon={CSSIcon} color1="#61dbfb" color2="#347384" />
+            <StackIcon icon={CSSIcon} />
           </div>
           <div class="grid-item">
-            <StackIcon icon={Javascript} color1="#61dbfb" color2="#347384" />
+            <StackIcon icon={Javascript} />
           </div>  
           <div class="grid-item">
-            <StackIcon icon={Expo} color1="#61dbfb" color2="#347384" />
+            <StackIcon icon={Node} />
           </div>
           <div class="grid-item">
-            <StackIcon icon={Node} color1="#61dbfb" color2="#347384" />
+            <StackIcon icon={MySQL} />
           </div>
           <div class="grid-item">
-            <StackIcon icon={MySQL} color1="#61dbfb" color2="#347384" />
-          </div>
-          <div class="grid-item">
-            <StackIcon icon={MySQL} color1="#61dbfb" color2="#347384" />
+            <StackIcon icon={MongoDB} />
           </div>  
           <div class="grid-item">     
-            <StackIcon icon={GCP} color1="#61dbfb" color2="#347384" />
+            <StackIcon icon={GCP} />
           </div>
           <div class="grid-item">
-            <StackIcon icon={Git} color1="#61dbfb" color2="#347384" />
+            <StackIcon icon={Git} />
           </div>
         </div>
         <StarButton title="My Projects" handleClick={handleClick}/>
