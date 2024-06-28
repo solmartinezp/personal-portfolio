@@ -1,0 +1,57 @@
+.see-container {
+  height: 294px;
+  width: 400px;
+  color: black;
+  perspective: 800px;
+  font-family: var(--secondary-font);
+}
+
+.see-card {
+  width: 100%;
+  height: 100%;
+  background: #fec195;
+  border-radius: 2rem;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.see-container:hover > .see-card {
+  cursor: pointer;
+  transform: rotateX(180deg) rotateZ(-180deg);
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 10px 5px #fec195a2;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.back {
+  background-color: #fec195;
+  transform: rotateX(180deg) rotateZ(-180deg);
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+}

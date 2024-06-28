@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Bubbles } from "../../components/Bubbles";
-import { Nav } from '../../components/Nav';
 import { Outlet } from "react-router-dom";
 import Spline from '@splinetool/react-spline';
 
@@ -27,7 +26,6 @@ const Layout = () => {
       <Spline
         scene="https://prod.spline.design/gjbT-JsiWSDhPhOF/scene.splinecode"
       />
-      <Nav />
       <Bubbles />
       <Outlet />
   

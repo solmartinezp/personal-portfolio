@@ -7,9 +7,19 @@ import Spline from '@splinetool/react-spline';
 import { useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion'
 import ImageScroller from '../../components/ImageScroller';
+import ModalComponent from '../../components/Modal';
 
 const Projects = () => {
   const navigate = useNavigate();
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const [project, setProject] = React.useState('');
+
+  const handleProject = (x) => {
+    setProject(x);
+  }
 
   const handleClick = () => {
     navigate('/contact');
@@ -28,13 +38,15 @@ const Projects = () => {
         <div className="projects-hero">
           <h1>My Projects:</h1>
 
-          <div style={{ width: '40%', margin: 0, padding: 0 }}>
-            <ImageScroller />
+          <div style={{ width: '35%', margin: 0, padding: 0 }}>
+            <ImageScroller handleOpen={handleOpen} handleProject={handleProject} />
           </div>
           <StarButton title="Contact me" handleClick={handleClick}/>
         </div>
   
         <InteractiveWarning />
+
+        <ModalComponent open={open} handleClose={handleClose} project={project} />
     </motion.div>
   );
 }
