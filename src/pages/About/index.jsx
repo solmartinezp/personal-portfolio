@@ -1,10 +1,8 @@
 import React from "react";
-import Spline from '@splinetool/react-spline';
 import { useNavigate } from "react-router-dom";
 import './style.css';
 
 import { motion } from 'framer-motion';
-import InteractiveWarning from "../../components/InteractiveWarning";
 import StarButton from "../../components/Buttons/StarButton";
 
 const About = () => {
@@ -15,14 +13,14 @@ const About = () => {
   };
 
   return (
-    <motion.div
-    className="about-div"
-    initial={{ opacity: 0}}
-    animate={{ opacity: 1}} 
-    exit={{ opacity: 0}}
-  >
-      <Spline scene="https://prod.spline.design/gjbT-JsiWSDhPhOF/scene.splinecode"
-      />
+  //   <motion.div
+  //   className="about-div"
+  //   initial={{ opacity: 0}}
+  //   animate={{ opacity: 1}} 
+  //   exit={{ opacity: 0}}
+  // >
+  //     <Spline scene="https://prod.spline.design/gjbT-JsiWSDhPhOF/scene.splinecode"
+  //     />
 
       <div className="about-hero">
         <h1>About me:</h1>
@@ -32,8 +30,8 @@ const About = () => {
         <StarButton title="Tech Stack" handleClick={handleClick}/>
       </div>
 
-      <InteractiveWarning />
-  </motion.div >
+  //     <InteractiveWarning />
+  // </motion.div >
   )
 };
 

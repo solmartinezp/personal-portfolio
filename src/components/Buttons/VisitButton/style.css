@@ -62,3 +62,58 @@
     color: black;
     margin-left: 5px;
   }
+
+  .contact-visit {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .contact-visit::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fec195;
+    transition: 0.5s ease;
+  }
+  
+  .contact-visit:hover {
+    color: black;
+    transition-delay: 0.5s;
+  }
+  
+  .contact-visit:hover::before {
+    width: 100%;
+  }
+  
+  .contact-visit::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #fec195;
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  .contact-visit:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }

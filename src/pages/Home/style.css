@@ -1,4 +1,11 @@
-.contact-hero {
+.layout-div {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.layout-hero {
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -12,25 +19,15 @@
     margin-top: 15%;
 }
 
-.contact-hero h1 {
+.layout-hero h1 {
     font-size: 60px;
     margin: 0;
     font-family: var(--secondary-font);
 }
 
-.contact-hero h4 {
-    text-align: center;
+.layout-hero h3 {
     font-family: var(--primary-font);
-    margin: 20px;
-    width: 90%;
-    font-size: 30px;
+    margin: 0;
+    font-size: 40px;
     font-weight: 200;
-}
-
-.contact-btns {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
 }

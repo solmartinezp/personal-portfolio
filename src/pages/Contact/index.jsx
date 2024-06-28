@@ -1,19 +1,21 @@
 import React from "react";
-import { Nav } from "../../components/Nav";
+import StarButton from "../../components/Buttons/StarButton";
+import VisitButton from "../../components/Buttons/VisitButton";
+
 import './style.css';
 
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 const Contact = () => (
-  <motion.section
-    style={{ background: "#fff", color: "#000" }}
-    initial={{ opacity: 0}}
-    animate={{ opacity: 1}} 
-    exit={{ opacity: 0}}
-  >
-    <Nav title="Contact" />
-    <h1>Contact</h1>
-  </motion.section>
+  <div className="contact-hero">
+        <h1>Contact me:</h1>
+
+        <div className="contact-btns">
+          <VisitButton contact title="Linkedin" />
+          <VisitButton contact title="Email" />
+          <VisitButton contact title="Download CV" />
+        </div>
+  </div>
 );
 
 export { Contact };

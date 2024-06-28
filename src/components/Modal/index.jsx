@@ -23,19 +23,19 @@ export default function ModalComponent({ open, handleClose, project} ) {
 
   const handleInfo = () => {
     switch(project) {
-        case 'TIPIE':
+        case 'Tipie App':
           setTitle('Tipie App');
           setDescription('A digital platform that handles collecting tips with credit and debit cards to distribute them among the staff of the business.');
           setGitUrl('');
           setUrl('https://tipieapp.com/');  
           break;
-        case 'PLANTAZU':
+        case 'Plantazu':
           setTitle('Plantazu');
           setDescription('Landing page for a gardening venture');
           setGitUrl('https://github.com/solmartinezp/plantazu');
           setUrl('https://solmartinezp.github.io/plantazu/');
             break;
-        case 'PODCAST':
+        case 'Podcast Channel':
           setTitle('Podcast Channel');
           setDescription('Landing page for a podcast channel');
           setGitUrl('https://github.com/solmartinezp/solmartinezp.github.io');
@@ -47,25 +47,25 @@ export default function ModalComponent({ open, handleClose, project} ) {
           setGitUrl('https://github.com/solmartinezp/proyecto-gifos');
           setUrl('https://solmartinezp.github.io/proyecto-gifos/');       
             break;
-        case 'DELILAH':
+        case 'Delilah Resto':
           setTitle('Delilah Resto');
           setDescription('Food ordering app for restaurants');
           setGitUrl('https://github.com/solmartinezp/delilah-resto');
           setUrl('');
             break;
-        case 'RANDOM':
+        case 'Random Image':
           setTitle('Random Image');
           setDescription('Web application that interacts with the Lorem Picsum API to show images with the dimensions indicated by the user');
           setGitUrl('https://github.com/solmartinezp/get-random-image');
           setUrl('https://solmartinezp.github.io/get-random-image/');       
             break;
-        case 'WEATHER':
+        case 'Weather App':
           setTitle('Weather App');
           setDescription('Web application that interacts with the Geocoding and the Weatherstack APIs to deliver the weather of an address indicated by the user');
           setGitUrl('https://github.com/solmartinezp/node-weather-website');
           setUrl('');       
             break;
-        case 'JOIN':
+        case 'Join the Savage':
           setTitle('Join the Savage');
           setDescription('Landing page for a music band');
           setGitUrl('');
@@ -80,7 +80,6 @@ export default function ModalComponent({ open, handleClose, project} ) {
   React.useEffect(() => {
     handleInfo();
   }, [project]);
-
 
   return (
     <div>
@@ -99,7 +98,7 @@ export default function ModalComponent({ open, handleClose, project} ) {
       >
         <Fade in={open}>
           <Box sx={style}>
-            <SeeMoreCard title={title} description={description} gitUrl={gitUrl} url={url} />
+            <SeeMoreCard project={project} title={title} description={description} gitUrl={gitUrl} url={url} />
           </Box>
         </Fade>
       </Modal>

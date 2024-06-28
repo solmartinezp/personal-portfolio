@@ -17,7 +17,7 @@ const ImageScroller = ( { handleOpen, handleProject } ) => {
           scrollAmount += 1;
           container.scrollLeft = scrollAmount;
           if (scrollAmount >= container.scrollWidth - container.clientWidth) {
-            scrollAmount = 0; // Reset to start
+            scrollAmount = 0;
           }
         }
       }, 20);

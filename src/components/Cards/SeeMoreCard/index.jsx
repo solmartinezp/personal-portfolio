@@ -11,11 +11,11 @@ import Weather from '../../../assets/weather-app.gif';
 import VisitButton from '../../Buttons/VisitButton';
 import './style.css';
 
-const SeeMoreCard = ({ title, description, gitUrl, url } ) => {
+const SeeMoreCard = ({ project, title, description, gitUrl, url } ) => {
   const [source, setSource] = React.useState('');
 
-  const getImage = () => {
-      switch(title) {
+  const getImage = (t) => {
+      switch(t) {
           case 'Tipie App':
               setSource(Tipie);
               break;
@@ -25,7 +25,7 @@ const SeeMoreCard = ({ title, description, gitUrl, url } ) => {
           case 'Podcast Channel':
               setSource(Podcast);
               break;
-          case 'GIFOS':
+          case 'Gifos App':
               setSource(Gifos);
               break;
           case 'Delilah Resto':
@@ -47,8 +47,8 @@ const SeeMoreCard = ({ title, description, gitUrl, url } ) => {
   };
 
   React.useEffect(() => {
-      getImage(title);
-  }, [title]);
+      getImage(project);
+  }, [project]);
 
   return (
     <div className="see-container">
@@ -59,9 +59,9 @@ const SeeMoreCard = ({ title, description, gitUrl, url } ) => {
           <p className="see-description">{description}</p>
         </div>
         <div className="back">
-          <div className="icons">           
-            <VisitButton title="Visit the website" url={url} />
-            <VisitButton title="Visit the repository" gitUrl={gitUrl} />
+          <div className="icons">  
+            {url !== '' && <VisitButton title="Visit the website" url={url} />}
+            {gitUrl !== '' && <VisitButton title="Visit the repository" gitUrl={gitUrl} />}
           </div>
         </div>
       </div>

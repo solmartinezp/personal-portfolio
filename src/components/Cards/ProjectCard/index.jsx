@@ -43,13 +43,15 @@ const Card = ({ title, handleOpen, handleProject, image }) => {
                 //
                 break;
         }
-
-        handleProject(img);
     };
 
     React.useEffect(() => {
         getImage(image);
     }, [image]);
+
+    const handleClick = (t) => {
+        handleProject(t);
+    };
 
     return (
         <div className="cards" >
@@ -57,7 +59,7 @@ const Card = ({ title, handleOpen, handleProject, image }) => {
                 <img className="card-image" src={source} alt="Project" />
                 <figcaption className="card_title">{title}</figcaption>
 
-                <button className="card-button" onClick={handleOpen}>See more</button>
+                <button className="card-button" onClick={() => handleClick(title)}>See more</button>
             </figure>
         </div>
     );
