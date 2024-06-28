@@ -1,5 +1,5 @@
 .see-container {
-  height: 294px;
+  height: 400px;
   width: 400px;
   color: black;
   perspective: 800px;
@@ -9,11 +9,24 @@
 .see-card {
   width: 100%;
   height: 100%;
-  background: #fec195;
+  background: rgba(255, 255, 255, 0.859);
   border-radius: 2rem;
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d;
+}
+
+.see-description {
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.see-image {
+  width: 80%;
+  box-shadow: 0px 0px 10px 5px #6362613a;
+
 }
 
 .see-container:hover > .see-card {
@@ -26,7 +39,7 @@
   height: 100%;
   width: 100%;
   border-radius: 2rem;
-  box-shadow: 0px 0px 10px 5px #fec195a2;
+  box-shadow: 0px 0px 10px 5px #fec1953a;
   position: absolute;
   backface-visibility: hidden;
   display: flex;
@@ -43,12 +56,12 @@
 .heading {
   font-size: 24px;
   font-weight: bold;
+  color: #502306;
 }
 
-.description {
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
+.heading-back {
+  font-family: var(--primary-font);
+  color: black;
 }
 
 .icons {

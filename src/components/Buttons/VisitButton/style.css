@@ -1,0 +1,64 @@
+.visit-btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .visit-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #341b02;
+    transition: 0.5s ease;
+  }
+  
+  .visit-btn:hover {
+    color: black;
+    transition-delay: 0.5s;
+  }
+  
+  .visit-btn:hover::before {
+    width: 100%;
+  }
+  
+  .visit-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #341b0232;
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  .visit-btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+  
+  .visit-img {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+
+  .visit-btn span {
+    color: black;
+    margin-left: 5px;
+  }
