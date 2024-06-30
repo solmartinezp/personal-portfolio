@@ -24,6 +24,8 @@
     font-size: 60px;
     margin: 0;
     font-family: var(--secondary-font);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
 .about-hero h4 {
@@ -33,4 +35,12 @@
     width: 90%;
     font-size: 30px;
     font-weight: 200;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }

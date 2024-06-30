@@ -16,6 +16,8 @@
     font-size: 60px;
     margin: 0;
     font-family: var(--secondary-font);
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 .contact-hero h4 {
@@ -33,4 +35,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }

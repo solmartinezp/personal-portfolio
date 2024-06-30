@@ -24,15 +24,8 @@
     font-size: 60px;
     margin: 0;
     font-family: var(--secondary-font);
-}
-
-.stack-hero h4 {
-    text-align: center;
-    font-family: var(--primary-font);
-    margin: 20px;
-    width: 90%;
-    font-size: 30px;
-    font-weight: 200;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 .stack-list {
@@ -41,8 +34,17 @@
     grid-template-columns: auto auto auto auto;
     padding: 20px;
     padding-bottom: 0;
-  }
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
 .grid-item {
     padding: 20px 60px 20px 60px;
     cursor: pointer;
+}
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
   }
