@@ -41,7 +41,7 @@ export default function ModalComponent({ open, handleClose, project} ) {
           setGitUrl('https://github.com/solmartinezp/solmartinezp.github.io');
           setUrl('https://solmartinezp.github.io/');       
             break;
-        case 'GIFOS':
+        case 'Gifos App':
           setTitle('GIFOS');
           setDescription('Interactive web application where you can share animated GIFs, by obtaining data from the Giphy.com API');
           setGitUrl('https://github.com/solmartinezp/proyecto-gifos');
@@ -53,7 +53,7 @@ export default function ModalComponent({ open, handleClose, project} ) {
           setGitUrl('https://github.com/solmartinezp/delilah-resto');
           setUrl('');
             break;
-        case 'Random Image':
+        case 'Get Random Image':
           setTitle('Random Image');
           setDescription('Web application that interacts with the Lorem Picsum API to show images with the dimensions indicated by the user');
           setGitUrl('https://github.com/solmartinezp/get-random-image');
@@ -65,7 +65,7 @@ export default function ModalComponent({ open, handleClose, project} ) {
           setGitUrl('https://github.com/solmartinezp/node-weather-website');
           setUrl('');       
             break;
-        case 'Join the Savage':
+        case 'Join the savage':
           setTitle('Join the Savage');
           setDescription('Landing page for a music band');
           setGitUrl('');

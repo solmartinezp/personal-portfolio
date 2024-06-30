@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import Spline from '@splinetool/react-spline';
 import StackIcon from '../../components/StackIcon';
 import './style.css';
 import ReactJS from '../../assets/reactJS.png';
@@ -16,8 +15,6 @@ import MongoDB from '../../assets/mongodb.png';
 import Node from '../../assets/node.png';
 import MySQL from '../../assets/sql.png';
 
-// import { motion } from 'framer-motion';
-// import InteractiveWarning from "../../components/InteractiveWarning";
 import StarButton from "../../components/Buttons/StarButton";
 const Stack = () => {
   const navigate = useNavigate();
@@ -27,16 +24,7 @@ const Stack = () => {
   };
 
   return (
-  //   <motion.div
-  //   className="stack-div"
-  //   initial={{ opacity: 0}}
-  //   animate={{ opacity: 1}} 
-  //   exit={{ opacity: 0}}
-  // >
-  //     <Spline scene="https://prod.spline.design/gjbT-JsiWSDhPhOF/scene.splinecode"
-  //     />
-
-      <div className="stack-hero">
+     <div className="stack-hero">
         <h1>My Stack:</h1>
 
         <div className="stack-list">
@@ -79,9 +67,6 @@ const Stack = () => {
         </div>
         <StarButton title="My Projects" handleClick={handleClick}/>
       </div>
-
-  //     <InteractiveWarning />
-  // </motion.div >
   )
 };
 

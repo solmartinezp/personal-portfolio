@@ -1,10 +1,7 @@
 import React from "react";
-import StarButton from "../../components/Buttons/StarButton";
 import VisitButton from "../../components/Buttons/VisitButton";
 
 import './style.css';
-
-// import { motion } from 'framer-motion';
 
 const Contact = () => (
   <div className="contact-hero">

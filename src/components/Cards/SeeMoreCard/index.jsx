@@ -14,6 +14,8 @@ import './style.css';
 const SeeMoreCard = ({ project, title, description, gitUrl, url } ) => {
   const [source, setSource] = React.useState('');
 
+  console.log('PROJECT', project);
+
   const getImage = (t) => {
       switch(t) {
           case 'Tipie App':
@@ -31,13 +33,13 @@ const SeeMoreCard = ({ project, title, description, gitUrl, url } ) => {
           case 'Delilah Resto':
               setSource(Delilah);
               break;
-          case 'Random Image':
+          case 'Get Random Image':
               setSource(GetRandom);
               break;
           case 'Weather App':
               setSource(Weather);
               break;
-          case 'Join the Savage':
+          case 'Join the savage':
               setSource(Join);
               break;
           default: 

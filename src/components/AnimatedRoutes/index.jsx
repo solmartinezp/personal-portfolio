@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route  } from "react-router-dom";
 import { About } from '../../pages/About';
 import { Layout } from '../../pages/Layout';
 import { Contact } from '../../pages/Contact';
@@ -10,10 +10,9 @@ import { Home } from '../../pages/Home';
 import { AnimatePresence } from 'framer-motion';
 
 export default function AnimatedRoutes() {
-    const location = useLocation();
     return (
         <AnimatePresence>
-            <Routes location={location} key={location.pathname} >
+            <Routes>
                 <Route element={<Layout />} >
                     <Route path="/" element={<Home />} />
                     <Route path="about" element={<About />} />
