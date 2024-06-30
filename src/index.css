@@ -1,6 +1,6 @@
 :root {
-  --primary-font: sans-serif;
-  --secondary-font: monospace;
+  --primary-font: "Nunito", sans-serif;
+  --secondary-font: "Jersey 20", sans-serif;;
 }
 
 body {

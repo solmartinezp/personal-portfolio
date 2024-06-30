@@ -16,7 +16,9 @@ const About = () => {
       <div className="about-hero">
         <h1>About me:</h1>
 
-        <h4>I have a solid background developing back and frontend applications, including both web and mobile.</h4>
+        <h4>From designing intuitive user interfaces (both web and mobile), to architecting robust backend solutions, I thrive on transforming ideas into responsive and scalable digital experiences.</h4>
+
+        <h4>Let's build something incredible together!</h4>
 
         <StarButton title="Tech Stack" handleClick={handleClick}/>
       </div>

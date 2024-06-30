@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: fadeInBounce 10s forwards;
+    animation: fadeInBounce 2s forwards;
 }
 
 .layout-3d p, span {

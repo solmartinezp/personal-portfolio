@@ -25,7 +25,7 @@ export default function VisitButton({title, gitUrl, url, contact}) {
             case 'Download CV':
                 const downloadLink = document.createElement('a');
                 downloadLink.href = CurriculumVitae;
-                downloadLink.download = 'Sol_Martinez_CV.pdf'; // Specify the desired filename
+                downloadLink.download = 'Sol_Martinez_CV.pdf';
                 downloadLink.click();
                 break;
             case 'Linkedin':

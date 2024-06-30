@@ -6,12 +6,13 @@
     color: black;
     text-transform: uppercase;
     position: relative;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-family: var(--primary-font);
   }
   
   .visit-btn::before {
@@ -22,12 +23,12 @@
     height: 2px;
     width: 0;
     background-color: #341b02;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
   }
   
   .visit-btn:hover {
     color: black;
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
   }
   
   .visit-btn:hover::before {
@@ -42,13 +43,13 @@
     height: 0;
     width: 100%;
     background-color: #341b0232;
-    transition: 0.4s ease;
+    transition: 0.3s ease;
     z-index: -1;
   }
   
   .visit-btn:hover::after {
     height: 100%;
-    transition-delay: 0.4s;
+    transition-delay: 0.3s;
     color: aliceblue;
   }
   
@@ -64,20 +65,21 @@
   }
 
   .contact-visit {
-    font-size: 17px;
+    font-size: 20px;
     background: transparent;
     border: none;
     padding: 1em 1.5em;
     color: white;
     text-transform: uppercase;
     position: relative;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+    font-family: var(--primary-font);
   }
   
   .contact-visit::before {
@@ -88,12 +90,12 @@
     height: 2px;
     width: 0;
     background-color: #fec195;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
   }
   
   .contact-visit:hover {
     color: black;
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
   }
   
   .contact-visit:hover::before {
@@ -108,12 +110,12 @@
     height: 0;
     width: 100%;
     background-color: #fec195;
-    transition: 0.4s ease;
+    transition: 0.3s ease;
     z-index: -1;
   }
   
   .contact-visit:hover::after {
     height: 100%;
-    transition-delay: 0.4s;
+    transition-delay: 0.3s;
     color: aliceblue;
   }

@@ -17,6 +17,7 @@
 
   opacity: 0;
   animation: fadeIn 2s forwards;
+  font-family: var(--secondary-font);
 }
 
 .star-button span {
