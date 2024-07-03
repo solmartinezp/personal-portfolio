@@ -8,10 +8,13 @@ import GetRandom from '../../../assets/get-random.gif';
 import Join from '../../../assets/jointhesavage.gif';
 import Weather from '../../../assets/weather-app.gif';
 
+import Loader from '../../Loader';
+
 import './style.css';
 
 const Card = ({ title, handleOpen, handleProject, image }) => {
     const [source, setSource] = React.useState('');
+    const [loading, setLoading] = React.useState(true);
 
     const getImage = (img) => {
         switch(img) {
@@ -47,6 +50,7 @@ const Card = ({ title, handleOpen, handleProject, image }) => {
 
     React.useEffect(() => {
         getImage(image);
+        setLoading(false);
     }, [image]);
 
     const handleClick = (t) => {
@@ -54,9 +58,13 @@ const Card = ({ title, handleOpen, handleProject, image }) => {
     };
 
     return (
-        <div className="cards" >
+            <div className="cards" >
             <figure className="card">
-                <img className="card-image" src={source} alt="Project" />
+                {
+                    loading ? (
+                        <Loader />
+                    ) :  <img className="card-image" src={source} alt="Project" /> 
+                }
                 <figcaption className="card_title">{title}</figcaption>
 
                 <button className="card-button" onClick={() => handleClick(title)}>See more</button>

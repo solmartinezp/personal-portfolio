@@ -23,7 +23,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects-hero">
+      <div className="projects-hero">
       <h1>My Projects:</h1>
 
       <div style={{ width: '35%', margin: 0, padding: 0 }}>

@@ -21,6 +21,8 @@
   font-size: 16px;
   margin: 0;
   padding: 0;
+  width: 90%;
+  font-family: var(--primary-font);
 }
 
 .see-image {
