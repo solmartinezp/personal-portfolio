@@ -1,6 +1,7 @@
 :root {
   --primary-font: "Nunito", sans-serif;
-  --secondary-font: "Jersey 20", sans-serif;;
+  --secondary-font: "Jersey 20", sans-serif;
+  --button-font: "Bebas Neue", sans-serif;
 }
 
 body {
