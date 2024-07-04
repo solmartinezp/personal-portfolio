@@ -71,6 +71,12 @@ export default function ModalComponent({ open, handleClose, project} ) {
           setGitUrl('');
           setUrl('https://jointhesavage.netlify.app/');       
             break;
+        case 'Second Sense':
+          setTitle('Second Sense');
+          setDescription('A responsive application containing a personalized timer that incorporates audio to alert the user when the time selected is up.');
+          setGitUrl('https://github.com/solmartinezp/second-sense');
+          setUrl('https://second-sense.vercel.app/');       
+            break;
         default: 
             //
             break;

@@ -7,6 +7,7 @@ import Delilah from '../../../assets/delilahresto.gif';
 import GetRandom from '../../../assets/get-random.gif';
 import Join from '../../../assets/jointhesavage.gif';
 import Weather from '../../../assets/weather-app.gif';
+import SecondSense from '../../../assets/secondsense.gif';
 
 import VisitButton from '../../Buttons/VisitButton';
 import './style.css';
@@ -42,6 +43,9 @@ const SeeMoreCard = ({ project, title, description, gitUrl, url } ) => {
           case 'Join the savage':
               setSource(Join);
               break;
+          case 'Second Sense':
+            setSource(SecondSense);
+            break;
           default: 
               //
               break;

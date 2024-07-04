@@ -45,6 +45,7 @@ const ImageScroller = ( { handleOpen, handleProject } ) => {
         <Card title="Podcast Channel" image="PODCAST" handleOpen={handleOpen} handleProject={handleProject} />
         <Card title="Gifos App" image="GIFOS" handleOpen={handleOpen} handleProject={handleProject} />
         <Card title="Delilah Resto" image="DELILAH" handleOpen={handleOpen} handleProject={handleProject} />
+        <Card title="Second Sense" image="SECOND" handleOpen={handleOpen} handleProject={handleProject} />
         <Card title="Get Random Image" image="RANDOM" handleOpen={handleOpen} handleProject={handleProject} />
         <Card title="Plantazu" image="PLANTAZU" handleOpen={handleOpen} handleProject={handleProject} />
         <Card title="Join the savage" image="JOIN" handleOpen={handleOpen} handleProject={handleProject} />

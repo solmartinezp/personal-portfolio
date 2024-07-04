@@ -7,6 +7,7 @@ import Delilah from '../../../assets/delilahresto.gif';
 import GetRandom from '../../../assets/get-random.gif';
 import Join from '../../../assets/jointhesavage.gif';
 import Weather from '../../../assets/weather-app.gif';
+import SecondSense from '../../../assets/secondsense.gif';
 
 import Loader from '../../Loader';
 
@@ -41,6 +42,9 @@ const Card = ({ title, handleOpen, handleProject, image }) => {
                 break;
             case 'JOIN':
                 setSource(Join);
+                break;
+            case 'SECOND':
+                setSource(SecondSense);
                 break;
             default: 
                 //
