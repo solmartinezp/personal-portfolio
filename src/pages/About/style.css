@@ -44,3 +44,19 @@
       opacity: 1;
     }
   }
+
+#back {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 44px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+  
+#back:hover {
+    filter: drop-shadow(
+    0 3px 6px rgba(247, 205, 170, 0.907)
+    );
+    font-size: 43.9px;
+}

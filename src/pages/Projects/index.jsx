@@ -22,17 +22,26 @@ const Projects = () => {
     navigate('/contact');
   };
 
+  const handleGoBack = () => {
+    navigate('/stack');
+  };
+
   return (
+    <>
+      <span class="material-symbols-outlined" id="back" onClick={handleGoBack}>
+        west
+      </span>
       <div className="projects-hero">
-      <h1>My Projects:</h1>
+        <h1>My Projects:</h1>
 
-      <div style={{ width: '35%', margin: 0, padding: 0 }}>
-        <ImageScroller handleProject={handleProject} />
+        <div style={{ width: '35%', margin: 0, padding: 0 }}>
+          <ImageScroller handleProject={handleProject} />
+        </div>
+        <StarButton title="Contact me" handleClick={handleClick} />
+
+        <ModalComponent open={open} handleClose={handleClose} project={project} />
       </div>
-      <StarButton title="Contact me" handleClick={handleClick}/>
-
-      <ModalComponent open={open} handleClose={handleClose} project={project} />
-    </div>
+    </>
   );
 }
 

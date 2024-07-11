@@ -23,32 +23,40 @@ const Stack = () => {
     navigate('/projects');
   };
 
+  const handleGoBack = () => {
+    navigate('/about');
+  };
+
   return (
-     <div className="stack-hero">
+    <>
+      <span class="material-symbols-outlined" id="back" onClick={handleGoBack}>
+        west
+      </span>
+      <div className="stack-hero">
         <h1>My Stack:</h1>
 
         <div className="stack-list">
           <div class="grid-item">
-             <StackIcon icon={ReactJS} />
+            <StackIcon icon={ReactJS} />
           </div>
           <div class="grid-item">
-              <StackIcon icon={ReactNative} />
+            <StackIcon icon={ReactNative} />
           </div>
           <div class="grid-item">
-              <StackIcon icon={Typescript} />
+            <StackIcon icon={Typescript} />
           </div>
           <div class="grid-item">
             <StackIcon icon={Expo} />
           </div>
           <div class="grid-item">
             <StackIcon icon={HTMLIcon} />
-          </div>  
+          </div>
           <div class="grid-item">
             <StackIcon icon={CSSIcon} />
           </div>
           <div class="grid-item">
             <StackIcon icon={Javascript} />
-          </div>  
+          </div>
           <div class="grid-item">
             <StackIcon icon={Node} />
           </div>
@@ -57,16 +65,17 @@ const Stack = () => {
           </div>
           <div class="grid-item">
             <StackIcon icon={MongoDB} />
-          </div>  
-          <div class="grid-item">     
+          </div>
+          <div class="grid-item">
             <StackIcon icon={GCP} />
           </div>
           <div class="grid-item">
             <StackIcon icon={Git} />
           </div>
         </div>
-        <StarButton title="My Projects" handleClick={handleClick}/>
+        <StarButton title="My Projects" handleClick={handleClick} />
       </div>
+    </>
   )
 };
 
