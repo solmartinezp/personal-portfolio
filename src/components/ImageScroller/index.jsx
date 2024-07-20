@@ -2,41 +2,39 @@ import React, { useEffect, useRef, useState } from 'react';
 import Card from '../Cards/ProjectCard';
 import './style.css';
 
-const ImageScroller = ( { handleOpen, handleProject } ) => {
+const ImageScroller = ({ handleOpen, handleProject }) => {
   const containerRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
+  const [scrollInterval, setScrollInterval] = useState(null);
 
   useEffect(() => {
     const container = containerRef.current;
-    let scrollAmount = 0;
-    let scrollInterval;
 
     const startScrolling = () => {
-      scrollInterval = setInterval(() => {
+      const interval = setInterval(() => {
         if (!isPaused) {
-          scrollAmount += 1;
-          container.scrollLeft = scrollAmount;
-          if (scrollAmount >= container.scrollWidth - container.clientWidth) {
-            scrollAmount = 0;
-          }
+          container.scrollLeft += 1;
         }
-      }, 20);
+      }, 10);
+      setScrollInterval(interval);
     };
 
     const stopScrolling = () => {
       clearInterval(scrollInterval);
+      setScrollInterval(null);
     };
 
     container.addEventListener('mouseenter', () => setIsPaused(true));
     container.addEventListener('mouseleave', () => setIsPaused(false));
 
     startScrolling();
+
     return () => {
       stopScrolling();
       container.removeEventListener('mouseenter', () => setIsPaused(true));
       container.removeEventListener('mouseleave', () => setIsPaused(false));
     };
-  }, [isPaused]);
+  }, [isPaused, scrollInterval]);
 
   return (
     <div className="image-scroller-div">

@@ -13,7 +13,7 @@ import Loader from '../../Loader';
 
 import './style.css';
 
-const Card = ({ title, handleOpen, handleProject, image }) => {
+const Card = ({ title, handleProject, image }) => {
     const [source, setSource] = React.useState('');
     const [loading, setLoading] = React.useState(true);
 

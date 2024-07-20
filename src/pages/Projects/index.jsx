@@ -37,7 +37,7 @@ const Projects = () => {
         <div style={{ width: '35%', margin: 0, padding: 0 }}>
           <ImageScroller handleProject={handleProject} />
         </div>
-        <StarButton title="Contact me" handleClick={handleClick} />
+        <StarButton title="Contact me" handleClick={handleClick} marginTop={0} />
 
         <ModalComponent open={open} handleClose={handleClose} project={project} />
       </div>

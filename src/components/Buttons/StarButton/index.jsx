@@ -2,7 +2,7 @@ import React from 'react';
 import Star from './Star';
 import './style.css';
 
-const StarButton = ({ title, handleClick }) => {
+const StarButton = ({ title, handleClick }, props) => {
   return (
     <button className="star-button" onClick={handleClick}>
       {title}
