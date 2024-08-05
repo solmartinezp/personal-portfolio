@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import './style.css';
@@ -17,7 +18,7 @@ const About = () => {
 
    return (
       <>
-        <span class="material-symbols-outlined" id="back" onClick={handleGoBack}>
+        <span className="material-symbols-outlined" id="back" onClick={handleGoBack}>
           west
         </span>
         <div className="about-hero">
