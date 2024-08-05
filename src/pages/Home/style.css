@@ -43,3 +43,41 @@
       opacity: 1;
     }
   }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1090px) {
+    .layout-hero h3 {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 775px) {
+    .layout-hero {
+        margin-top: 20%;
+    }
+
+    .layout-hero h1 {
+        font-size: 40px;
+    }
+
+    .layout-hero h3 {
+        margin: 5% 0 5% 0;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .layout-hero {
+        margin-top: 40%;
+    }
+
+    .layout-hero h1 {
+        font-size: 30px;
+    }
+
+    .layout-hero h3 {
+        font-size: 20px;
+    }
+}

@@ -90,3 +90,23 @@
     opacity: 1;
   }
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 775px) {
+  .star-button {
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 426px) {
+  .star-button {
+    padding: 8px 13px;
+  }
+}
+
+@media (max-width: 375px) {
+  .star-button {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+}

@@ -48,3 +48,16 @@
     transform: scaleX(-1);
   }
   
+/* MEDIA QUERIES */
+
+@media (max-width: 620px) {
+  .coin {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 426px) {
+  .stack-hero h1 {
+    font-size: 35px;
+  }
+}

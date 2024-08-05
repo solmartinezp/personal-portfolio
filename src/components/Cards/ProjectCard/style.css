@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
   .card {
     width: 300px;
@@ -71,5 +71,13 @@
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 500px) {
+  .card {
+    width: 250px;
   }
 }

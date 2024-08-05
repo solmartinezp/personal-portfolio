@@ -60,3 +60,50 @@
     );
     font-size: 43.9px;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+    #back {
+        font-size: 35px;
+    }
+
+    .about-hero h1 {
+        font-size: 50px;
+    }
+
+    .about-hero h4 {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 775px) {
+    #back {
+       top: 2%;
+    }
+
+    .about-hero h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 426px) {
+    #back {
+       font-size: 25px;
+     }
+
+    .about-hero {
+        width: 90%;
+        margin-top: 40%;
+    }
+
+     .about-hero h1 {
+        font-size: 30px;
+    }
+ 
+     .about-hero h4 {
+        width: 100%;
+        font-size: 14px;
+     }
+}

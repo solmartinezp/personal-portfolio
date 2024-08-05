@@ -22,3 +22,14 @@
   height: auto;
   display: block;
 }
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .image-scroller-div {
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+}
+
+

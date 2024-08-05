@@ -119,3 +119,11 @@
     transition-delay: 0.3s;
     color: aliceblue;
   }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+  .contact-visit {
+   font-size: 18px;
+  }
+}

@@ -1,8 +1,7 @@
 .layout-3d {
     z-index: 300;
     position: absolute;
-    bottom: 50px;
-    left: 20px;
+    bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,3 +42,26 @@
       transform: translateY(0);
     }
   }
+
+  /* MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .layout-3d {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 775px) {
+  .layout-3d p {
+    font-size: 12px;
+  }
+
+  .layout-3d span {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .layout-3d {
+    visibility: hidden;
+  }
+}

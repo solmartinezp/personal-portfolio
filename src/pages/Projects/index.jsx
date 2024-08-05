@@ -34,7 +34,7 @@ const Projects = () => {
       <div className="projects-hero">
         <h1>My Projects:</h1>
 
-        <div style={{ width: '35%', margin: 0, padding: 0 }}>
+        <div className='project-image-div'>
           <ImageScroller handleProject={handleProject} />
         </div>
         <StarButton title="Contact me" handleClick={handleClick} marginTop={0} />
